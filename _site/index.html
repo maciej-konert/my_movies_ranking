@@ -3,23 +3,25 @@
 
 <head>
     <title>My personal top5 from the top filmweb movies</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
-        <h1>My personal top5 from the top filmweb movies</h1>
+        <h1 id="title1">MY PERSONAL TOP5 FROM THE TOP FILMWEB MOVIES</h1>
     </header>
 
     <hr>
 
     <article>
         <h2>My list:</h2>
-        <ol type="I">
-            <li>Green Mile</li>
-            <li>Inception</li>
-            <li>The Shawshank Redemption</li>
-            <li>The Lion King</li>
-            <li>Forrest Gump</li>
+        <ol class="container_list" type="I">
+            <li class="item item2-1">Green Mile</li>
+            <li class="item item2-2">Inception</li>
+            <li class="item item2-3">The Shawshank Redemption</li>
+            <li class="item item2-4">The Lion King</li>
+            <li class="item item2-5">Forrest Gump</li>
         </ol>
     </article>
 
@@ -64,12 +66,13 @@
     <hr>
 
     <p>Complete this poll!!</p>
-    <form>
-        <label>First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label>Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
+    <form class="container_form">
+        <div class="item item-1"><label>First name:</label><br>
+            <input type="text" id="fname" name="fname"><br></div>
+        <div class="item item-2"><label>Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br></div>
 
+        <div class="item item-3">
         <label for="select1">Your Favourite Movie</label><br>
 
         <select name="movie" id="select1">
@@ -88,16 +91,20 @@
             </optgroup>
         </select><br>
         <br>
+        </div>
 
-
+        <div class="item item-4">
         <p>Poll completion progress:</p>
         <progress value="30" max="100">30%</progress><br>
+        </div>
 
+        <div class="item item-5">
         <button type="submit">Send</button>
+        </div>
     </form>
 
     <hr>
-    <details>
+    <details class="about_ranking">
         <summary>About this movie ranking</summary>
         <p>This ranking was created based on personal preferences and box office success. All movies listed here are critically acclaimed and have received numerous awards.</p>
     </details>
@@ -106,11 +113,11 @@
 
     <img src="polscypatrioci.webp" alt="Weryfikacja" width="500">
 
-    <hr>
+    <hr class="map1">
 
-    <h1>Interactive Movie Posters</h1>
-    <img src="movies_collage.png" alt="collage" usemap="#image-map">
-    <map name="image-map">
+    <h1 class="map1">Interactive Movie Posters</h1>
+    <img id="image1" class="map1" src="movies_collage.png" alt="collage" usemap="#image-map">
+    <map class="map1" name="image-map">
         <area target="_blank" alt="shawshank" title="shawshank" href="https://www.imdb.com/title/tt0111161/" coords="0,0,527,755" shape="rect">
         <area target="_blank" alt="inception" title="inception" href="https://www.imdb.com/title/tt1375666/" coords="527,0,1035,756" shape="rect">
         <area target="_blank" alt="greenmile" title="greenmile" href="https://www.imdb.com/title/tt0120689/" coords="0,750,519,1482" shape="rect">
@@ -121,6 +128,7 @@
     <footer>
         <p>Page by <em>Maciej Konert</em></p>
     </footer>
+    
 </body>
 
 </html>

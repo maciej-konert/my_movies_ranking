@@ -1,0 +1,64 @@
+body {
+  background-color: #f4d35e;
+}
+
+#title1 {
+  color: rgb(134, 172, 64);
+}
+#title1:hover {
+  background-color: #f4d35e;
+}
+@media all and (max-width: 800px) {
+  #title1:hover {
+    background-color: #eedfa2;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .map1 {
+    display: none;
+  }
+  .item-3 {
+    order: -1;
+  }
+}
+.about_ranking:hover {
+  background-color: #f4d35e;
+}
+@media (hover: hover) {
+  .about_ranking:hover {
+    background-color: #0d3b66;
+    color: white;
+  }
+}
+
+button[type=submit] {
+  background-color: #0d3b66;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button[type=submit]:hover {
+  background-color: #072139;
+}
+
+.container_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container_list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.container_table {
+  display: flex;
+  justify-content: center;
+}
