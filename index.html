@@ -3,13 +3,15 @@
 
 <head>
     <title>My personal top5 from the top filmweb movies</title>
-    <link rel="stylesheet" href="assets/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/tailwind-output.css">
+    <script type="text/javascript" src="assets/js/live.js"></script>    
 </head>
 
 <body>
     <header>
-        <h1 id="title1">MY PERSONAL TOP5 FROM THE TOP FILMWEB MOVIES</h1>
+        <h1 class="font-mono text-5xl" id="title1">My personal top5 from the top filmweb movies.</h1>
     </header>
 
     <hr>
@@ -27,50 +29,52 @@
 
     <hr>
 
-    <table>
+    <table class="bg-cyan-800 border-collapse table-auto border-3 border-slate-700">
         <caption><strong>Ranking</strong> and <strong>Box Office</strong> for every movie on my list.</caption>
+        <thead>
+            <tr>
+                <th class="border-3 border-slate-700" scope="col">Title</th>
+                <th class="border-3 border-slate-700" scope="col">Filmweb Ranking</th>
+                <th class="border-3 border-slate-700" scope="col">Box Office</th>
+            </tr>
+        </thead>
         <tbody>
             <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Filmweb Ranking</th>
-                <th scope="col">Box Office</th>
+                <td class="border-3 border-slate-700">Green Mile</td>
+                <td class="border-3 border-slate-700">8,60</td>
+                <td class="border-3 border-slate-700">286M</td>
             </tr>
             <tr>
-                <td>Green Mile</td>
-                <td>8,60</td>
-                <td>286M</td>
+                <td class="border-3 border-slate-700">Inception</td>
+                <td class="border-3 border-slate-700">8,21</td>
+                <td class="border-3 border-slate-700">860M</td>
             </tr>
             <tr>
-                <td>Inception</td>
-                <td>8,21</td>
-                <td>860M</td>
+                <td class="border-3 border-slate-700">The Shawshank Redemption</td>
+                <td class="border-3 border-slate-700">8,77</td>
+                <td class="border-3 border-slate-700">73M</td>
             </tr>
             <tr>
-                <td>The Shawshank Redemption</td>
-                <td>8,77</td>
-                <td>73M</td>
+                <td class="border-3 border-slate-700">The Lion King</td>
+                <td class="border-3 border-slate-700">8,21</td>
+                <td class="border-3 border-slate-700">1,6B</td>
             </tr>
             <tr>
-                <td>The Lion King</td>
-                <td>8,21</td>
-                <td>1,6B</td>
-            </tr>
-            <tr>
-                <td>Forrest Gump</td>
-                <td>8,52</td>
-                <td>678M</td>
+                <td class="border-3 border-slate-700">Forrest Gump</td>
+                <td class="border-3 border-slate-700">8,52</td>
+                <td class="border-3 border-slate-700">678M</td>
             </tr>
         </tbody>
     </table>
 
     <hr>
 
-    <p>Complete this poll!!</p>
+    <p class="underline underline-offset-2 text-blue-800">Complete this poll!!</p>
     <form class="container_form">
         <div class="item item-1"><label>First name:</label><br>
-            <input type="text" id="fname" name="fname"><br></div>
+            <input class="border-1 rounded-md" type="text" id="fname" name="fname"><br></div>
         <div class="item item-2"><label>Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br></div>
+            <input class="border-1 rounded-md" type="text" id="lname" name="lname"><br></div>
 
         <div class="item item-3">
         <label for="select1">Your Favourite Movie</label><br>
@@ -123,6 +127,35 @@
         <area target="_blank" alt="greenmile" title="greenmile" href="https://www.imdb.com/title/tt0120689/" coords="0,750,519,1482" shape="rect">
         <area target="_blank" alt="gump" title="gump" href="https://www.imdb.com/title/tt0109830/" coords="525,759,1020,1482" shape="rect">
     </map>
+    <hr>
+
+    <p class="text-orange-800">Some cool icons:</p>
+    <div class="space-y-6">
+        <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-slate-700 p-6 shadow-none outline outline-white/10 -outline-offset-1">
+            <img class="w-12 h-12 shrink-0" src="movie_icon.png" alt="Movie Logo">
+            <div>
+                <div class="text-xl font-medium text-white">Green Mile</div>
+                <p class="text-gray-400">Probably the best movie OAT</p>
+            </div>
+        </div>
+
+        <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-yellow-900 p-6 shadow-none outline outline-white/10 -outline-offset-1">
+            <img class="w-12 h-12 shrink-0" src="movie_icon.png" alt="Movie Logo">
+            <div>
+                <div class="text-xl font-medium text-white">Inception</div>
+                <p class="text-gray-400">Probably the best sci-fi movie OAT</p>
+            </div>
+        </div>
+
+        <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-red-950 p-6 shadow-none outline outline-white/10 -outline-offset-1">
+            <img class="w-12 h-12 shrink-0" src="movie_icon.png" alt="Movie Logo">
+            <div>
+                <div class="text-xl font-medium text-white">Forrest Gump</div>
+                <p class="text-gray-400">Probably the best comedy-drama movie OAT</p>
+            </div>
+        </div>
+    </div>
+
     <hr>
 
     <footer>

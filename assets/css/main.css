@@ -2,8 +2,13 @@ body {
   background-color: #f4d35e;
 }
 
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 #title1 {
-  color: rgb(134, 172, 64);
+  color: rgb(207, 135, 26);
 }
 #title1:hover {
   background-color: #f4d35e;
@@ -56,6 +61,11 @@ button[type=submit]:hover {
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
+}
+.container_list li {
+  display: list-item;
+  list-style-type: upper-roman;
+  margin-left: 1.5em;
 }
 
 .container_table {

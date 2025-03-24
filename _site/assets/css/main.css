@@ -3,7 +3,7 @@ body {
 }
 
 #title1 {
-  color: rgb(134, 172, 64);
+  color: rgb(207, 135, 26);
 }
 #title1:hover {
   background-color: #f4d35e;
@@ -50,6 +50,11 @@ button[type=submit]:hover {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+}
+.container_form li {
+  display: list-item;
+  list-style-type: upper-roman;
+  margin-left: 1.5em;
 }
 
 .container_list {

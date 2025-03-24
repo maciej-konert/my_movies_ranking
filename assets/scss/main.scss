@@ -1,13 +1,19 @@
+
 $base-color: #f4d35e;
 $navy-color: #0d3b66;
 $second-color: #eedfa2;
 
-$link-color: rgb(168, 208, 39);
-$text-color: rgb(134, 172, 64);
+$link-color: rgb(158, 181, 73);
+$text-color: rgb(207, 135, 26);
 
 body {
     background-color: $base-color;
 }
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
 #title1 {
     color: $text-color;
@@ -68,13 +74,19 @@ button[type="submit"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:10px
+    gap:10px;
 }
 
 .container_list {
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
+
+    li {
+        display: list-item;
+        list-style-type: upper-roman;
+        margin-left: 1.5em;
+    }
 }
 
 .container_table {
