@@ -13,6 +13,8 @@
     --color-yellow-900: oklch(0.421 0.095 57.708);
     --color-yellow-950: oklch(0.286 0.066 53.813);
     --color-cyan-800: oklch(0.45 0.085 224.283);
+    --color-sky-700: oklch(0.5 0.134 242.749);
+    --color-blue-500: oklch(0.623 0.214 259.815);
     --color-blue-800: oklch(0.424 0.199 265.638);
     --color-slate-700: oklch(0.372 0.044 257.287);
     --color-slate-800: oklch(0.279 0.041 260.031);
@@ -454,18 +456,6 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
-  .h-18 {
-    height: calc(var(--spacing) * 18);
-  }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
-  }
-  .h-22 {
-    height: calc(var(--spacing) * 22);
-  }
-  .h-24 {
-    height: calc(var(--spacing) * 24);
-  }
   .h-screen {
     height: 100vh;
   }
@@ -484,44 +474,14 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
-  }
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
-  .w-14 {
-    width: calc(var(--spacing) * 14);
-  }
-  .w-18 {
-    width: calc(var(--spacing) * 18);
-  }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
-  .w-22 {
-    width: calc(var(--spacing) * 22);
-  }
-  .w-24 {
-    width: calc(var(--spacing) * 24);
-  }
-  .w-64 {
-    width: calc(var(--spacing) * 64);
-  }
   .w-96 {
     width: calc(var(--spacing) * 96);
-  }
-  .w-200 {
-    width: calc(var(--spacing) * 200);
-  }
-  .w-300 {
-    width: calc(var(--spacing) * 300);
-  }
-  .w-400 {
-    width: calc(var(--spacing) * 400);
   }
   .w-screen {
     width: 100vw;
@@ -543,21 +503,6 @@
   }
   .flex-1 {
     flex: 1;
-  }
-  .flex-1\/2 {
-    flex: calc(1/2 * 100%);
-  }
-  .flex-2 {
-    flex: 2;
-  }
-  .flex-2\/3 {
-    flex: calc(2/3 * 100%);
-  }
-  .flex-4 {
-    flex: 4;
-  }
-  .flex-4\/5 {
-    flex: calc(4/5 * 100%);
   }
   .flex-auto {
     flex: auto;
@@ -1516,6 +1461,9 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
+  .text-blue-500 {
+    color: var(--color-blue-500);
+  }
   .text-blue-800 {
     color: var(--color-blue-800);
   }
@@ -1524,6 +1472,12 @@
   }
   .text-orange-800 {
     color: var(--color-orange-800);
+  }
+  .text-red-800 {
+    color: var(--color-red-800);
+  }
+  .text-sky-700 {
+    color: var(--color-sky-700);
   }
   .text-white {
     color: var(--color-white);
