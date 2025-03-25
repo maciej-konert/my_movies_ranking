@@ -29,7 +29,7 @@
 
     <hr>
 
-    <table class="bg-cyan-800 border-collapse table-auto border-3 border-slate-700">
+    <table class="bg-cyan-800 border-collapse table-auto w-1/2 border-3 border-slate-700">
         <caption><strong>Ranking</strong> and <strong>Box Office</strong> for every movie on my list.</caption>
         <thead>
             <tr>
@@ -70,6 +70,7 @@
     <hr>
 
     <p class="underline underline-offset-2 text-blue-800">Complete this poll!!</p>
+
     <form class="container_form">
         <div class="item item-1"><label>First name:</label><br>
             <input class="border-1 rounded-md" type="text" id="fname" name="fname"><br></div>
@@ -79,7 +80,7 @@
         <div class="item item-3">
         <label for="select1">Your Favourite Movie</label><br>
 
-        <select name="movie" id="select1">
+        <select class="border-1 rounded-md" name="movie" id="select1">
             <optgroup label="Thriller">
                 <option value="shawshank">The Shawshank Redemption</option>
                 <option value="mile">Green Mile</option>
@@ -103,7 +104,10 @@
         </div>
 
         <div class="item item-5">
-        <button type="submit">Send</button>
+            <button type="submit" class="relative">
+                Send
+                <span class="absolute -top-1 -right-1 h-3 w-3 animate-ping rounded-full bg-red-500"></span>
+              </button>
         </div>
     </form>
 
@@ -130,8 +134,8 @@
     <hr>
 
     <p class="text-orange-800">Some cool icons:</p>
-    <div class="space-y-6">
-        <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-slate-700 p-6 shadow-none outline outline-white/10 -outline-offset-1">
+    <div class="flex flex-col space-y-6 max-w-md mx-auto">
+        <div class="w-96 flex-auto flex items-center gap-x-4 rounded-xl bg-slate-700 p-6 shadow-xl shadow-slate-800 outline outline-white/10 -outline-offset-1">
             <img class="w-12 h-12 shrink-0" src="movie_icon.png" alt="Movie Logo">
             <div>
                 <div class="text-xl font-medium text-white">Green Mile</div>
@@ -139,7 +143,7 @@
             </div>
         </div>
 
-        <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-yellow-900 p-6 shadow-none outline outline-white/10 -outline-offset-1">
+        <div class="w-96 flex-auto flex items-center gap-x-4 rounded-xl bg-yellow-900 p-6 shadow-xl shadow-yellow-950 outline outline-white/10 -outline-offset-1">
             <img class="w-12 h-12 shrink-0" src="movie_icon.png" alt="Movie Logo">
             <div>
                 <div class="text-xl font-medium text-white">Inception</div>
@@ -147,7 +151,36 @@
             </div>
         </div>
 
-        <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-red-950 p-6 shadow-none outline outline-white/10 -outline-offset-1">
+        <div class="w-96 flex-auto flex items-center gap-x-4 rounded-xl bg-red-800 p-6 shadow-xl shadow-red-900 outline outline-white/10 -outline-offset-1">
+            <img class="w-12 h-12 shrink-0" src="movie_icon.png" alt="Movie Logo">
+            <div>
+                <div class="text-xl font-medium text-white">Forrest Gump</div>
+                <p class="text-gray-400">Probably the best comedy-drama movie OAT</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="text-orange-800">Some more cool icons:</p>
+    <div class="flex flex-row gap-4">
+        <div class="flex-1 flex items-center rounded-xl bg-slate-700 p-6 shadow-xl shadow-slate-800 outline outline-white/10 -outline-offset-1">
+            <img class="w-12 h-12 shrink-0" src="movie_icon.png" alt="Movie Logo">
+            <div class="ml-4">
+                <div class="text-xl font-medium text-white">Green Mile</div>
+                <p class="text-gray-400">Probably the best movie OAT</p>
+            </div>
+        </div>
+
+        <div class="w-1/2 flex flex-none items-center rounded-xl bg-yellow-900 p-6 shadow-xl shadow-yellow-950 outline outline-white/10 -outline-offset-1">
+            <img class="w-12 h-12 shrink-0" src="movie_icon.png" alt="Movie Logo">
+            <div>
+                <div class="text-xl font-medium text-white">Inception</div>
+                <p class="text-gray-400">Probably the best sci-fi movie OAT</p>
+            </div>
+        </div>
+
+        <div class="flex-1 flex items-center rounded-xl bg-red-800 p-6 shadow-xl shadow-red-900 outline outline-white/10 -outline-offset-1">
             <img class="w-12 h-12 shrink-0" src="movie_icon.png" alt="Movie Logo">
             <div>
                 <div class="text-xl font-medium text-white">Forrest Gump</div>
